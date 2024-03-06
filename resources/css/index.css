@@ -3,5 +3,12 @@
 }
 
 header {
-    display: inline-block 
+    display: inline-block;
+}
+
+header li {
+    font-size: 25px;
+    padding: auto 50px;
+    margin: 0 50px;
+    background-color: black;
 }
