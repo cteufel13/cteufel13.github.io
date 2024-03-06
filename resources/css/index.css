@@ -23,9 +23,9 @@ header li {
 
 }
 
-main {
+body{
+    top: 50px;
 }
-
 main h1 {
     text-align: center;
 }
