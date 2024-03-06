@@ -1,0 +1,26 @@
+* {
+    font-family: Helvetica, Arial, sans-serif;
+  }
+  
+  
+  h1 {
+    color: SeaGreen;
+  }
+  
+  
+  p, li {
+    font-size: 18px;
+  }
+
+  ul li {
+    list-style-type: square;
+  }
+  
+  
+  a {
+    text-decoration: none;
+  }
+
+  video {
+    margin: 0 auto;
+  }
