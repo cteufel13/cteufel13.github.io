@@ -27,6 +27,11 @@ body{
     top: 50px;
 }
 
+#title {
+    background-image: url("/resources/images/IMG_5139.jpeg");
+}
+
+
 main h1 {
     text-align: center;
 }
