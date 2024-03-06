@@ -3,12 +3,14 @@
 }
 
 header {
-    display: inline-block;
+    background-image:url("./resources/images/header.jepg");
 }
 
 header li {
     font-size: 25px;
     padding: auto 50px;
     margin: 0 50px;
-    background-color: black;
+    display: inline-block;
+    color: white;
+
 }
