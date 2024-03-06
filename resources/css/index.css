@@ -16,21 +16,21 @@ header {
 header li {
     font-size: 25px;
     padding: auto 50px;
-    margin: 25 50px;
+    margin: 0 50px;
     display: inline-block;
     color: white;
     border: 4px solid white;
 
 }
 
-body{
-    top: 50px;
-}
 
 #title {
     background-image: url("/resources/images/IMG_5139.jpeg");
 }
 
+main {
+    margin-top: 100px;
+}
 
 main h1 {
     text-align: center;
