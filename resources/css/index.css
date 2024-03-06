@@ -3,14 +3,16 @@
 }
 
 header {
-    background-image:url("./resources/images/header.jepg");
+    background-image: url("/resources/images/header.jpeg");
+
 }
 
 header li {
     font-size: 25px;
     padding: auto 50px;
-    margin: 0 50px;
+    margin: 0 auto;
     display: inline-block;
     color: white;
+    border-color: white;
 
 }
