@@ -3,16 +3,22 @@
 }
 
 header {
+    position: fixed;
     background-image: url("/resources/images/header.jpeg");
-
 }
 
 header li {
     font-size: 25px;
     padding: auto 50px;
-    margin: 0 auto;
+    margin: 0 50px;
     display: inline-block;
     color: white;
-    border-color: white;
+    border: 4px solid white;
+}
 
+main {
+}
+
+main h1 {
+    text-align: center;
 }
