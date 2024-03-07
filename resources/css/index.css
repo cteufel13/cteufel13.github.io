@@ -13,7 +13,7 @@ header {
     height: 50px; 
 }
 
-header li {
+header li a {
     font-size: 25px;
     padding: auto 50px;
     margin: 0 50px;
