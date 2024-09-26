@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.97086b4e.css",
-    "main.js": "/static/js/main.c81ae51e.js",
+    "main.css": "/static/css/main.07991844.css",
+    "main.js": "/static/js/main.f8ca4901.js",
     "static/media/nightsky.jpg": "/static/media/nightsky.0bb1df47290fc91091bb.jpg",
     "index.html": "/index.html",
-    "main.97086b4e.css.map": "/static/css/main.97086b4e.css.map",
-    "main.c81ae51e.js.map": "/static/js/main.c81ae51e.js.map"
+    "main.07991844.css.map": "/static/css/main.07991844.css.map",
+    "main.f8ca4901.js.map": "/static/js/main.f8ca4901.js.map"
   },
   "entrypoints": [
-    "static/css/main.97086b4e.css",
-    "static/js/main.c81ae51e.js"
+    "static/css/main.07991844.css",
+    "static/js/main.f8ca4901.js"
   ]
 }
