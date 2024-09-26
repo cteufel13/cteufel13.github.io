@@ -1,12 +1,18 @@
 import './App.css';
-import Navbar from './nav.js' ;
+import HeroBackground from  './Hero.js';
+import Navbar from './NavBar.js';
+
+// https://transform.tools/html-to-jsx
 
 function App() {
+  
   return (
-    <div className="App">
-      <Navbar/>
+    <div>
+      {/* <Navbar /> */}
+      <HeroBackground />
     </div>
   );
 }
 
 export default App;
+
