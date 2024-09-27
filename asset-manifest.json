@@ -1,15 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.97b3df46.css",
-    "main.js": "/static/js/main.16bfad91.js",
+    "main.css": "/static/css/main.78a44dbd.css",
+    "main.js": "/static/js/main.b5b5133c.js",
     "static/media/nightsky.jpg": "/static/media/nightsky.0bb1df47290fc91091bb.jpg",
+    "static/media/Bernoulli.png": "/static/media/Bernoulli.2522bb8358e45c7f4260.png",
+    "static/media/Project1.png": "/static/media/Project1.3c9dd392b38199e56f29.png",
     "static/media/logo.png": "/static/media/logo.f8a7a7fb09651fd92453.png",
+    "static/media/ETH Zürich.png": "/static/media/ETH Zürich.89baa7f5d30dbb80ce74.png",
     "index.html": "/index.html",
-    "main.97b3df46.css.map": "/static/css/main.97b3df46.css.map",
-    "main.16bfad91.js.map": "/static/js/main.16bfad91.js.map"
+    "main.78a44dbd.css.map": "/static/css/main.78a44dbd.css.map",
+    "main.b5b5133c.js.map": "/static/js/main.b5b5133c.js.map"
   },
   "entrypoints": [
-    "static/css/main.97b3df46.css",
-    "static/js/main.16bfad91.js"
+    "static/css/main.78a44dbd.css",
+    "static/js/main.b5b5133c.js"
   ]
 }
