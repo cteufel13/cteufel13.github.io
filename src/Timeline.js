@@ -27,26 +27,25 @@ function Project ({project_name,img_name,summary,project_caption}) {
             </div>);
 };
 
-function Occupation ({occupation_name,occupation_caption,occupation_date,company_name,summary}) {
+function Occupation ({occupation_name,occupation_caption,occupation_date,company_name,summary,customStyles={}}) {
+
+    const {
+        headingStyle,
+        subheadingStyle,
+        summaryStyle,
+      } = customStyles;
+
+    const logo_name = company_name + "_logo";
 
     return (<div className="occupation">
-        <h1 className="occupation_name">{occupation_name}</h1>
-        <h2 className="occupation_date">{occupation_date}</h2>
-        <h2 className="company_name">{company_name}</h2>
-
+        <div className="occupation_logo"> <img src={getImageUrl(company_name)}  alt={logo_name} /></div>
         <div className="occupation_content">
+            <h1 className="occupation_heading" style={headingStyle}>{company_name}</h1>
+            <h2 className="occupation_subheading" style={subheadingStyle}>{occupation_name} </h2>
+            <h2 className="occupation_subheading" style={subheadingStyle}>{occupation_date} </h2>
 
-            <div className="occupation_figure">
-                <img className = "occupation_picture" src= {getImageUrl(occupation_name)} alt={occupation_name} />
-                <figcaption className="occupation_capation">{occupation_caption}</figcaption>
-            </div>
-
-            <div className='occupation_right'>  
-                <p className='occupation_summary'>{summary}</p>
-            </div>
-
+            <div className="occupation_summary" style={summaryStyle}>{summary}</div>
         </div>
-
     </div>);
 }
 
@@ -69,7 +68,7 @@ const useScrollFadeIn = (WrappedComponent,fadeStartOffset = 0.9) => {
                 // Calculate fadeStart and fadeEnd based on scroll position
 
                 const fadeStart = window.innerHeight * fadeStartOffset; // Start fading in when element enters this portion of viewport
-                const fadeEnd = window.innerHeight *(fadeStartOffset -0.2); // Fully visible when the element reaches 10% from the top
+                const fadeEnd = window.innerHeight *(fadeStartOffset -0.2)-elementHeight; // Fully visible when the element reaches 10% from the top
 
                 // Adjust opacity as the element moves from fadeStart to fadeEnd
                 if (elementTop > fadeStart) {
@@ -114,21 +113,47 @@ const ScrollFadeInElement = ({ children }) => {
 
 
 
-const Timeline = () =>{
+const Timeline = () =>{ 
 
     return (<div className="timeline">
                 <h1 className="timeline__Heading">Timeline</h1>
-                <div className="timeline_Line"></div>
+                    <ScrollFadeInElement>
                     <div className="timeline_Circle">2021</div>
+                    </ScrollFadeInElement>
+
+                    <ScrollFadeInElement>       
+                        <div className="timeline_Line">
+                            <Occupation occupation_name="BSc. Mechanical Engineering" 
+                                        occupation_date="June 2021" 
+                                        company_name="ETH Zürich" 
+                                        summary="Relevant Courses: going Insane, Thermodynamics" 
+                            />
+                        </div>
+                    </ScrollFadeInElement>
+
+                    <ScrollFadeInElement>
+                    <div className="timeline_Circle">2022</div>
+                    </ScrollFadeInElement>
+
                     <ScrollFadeInElement>
                         <div className="timeline_Line">
-                        <Project    project_name="Project Bernoulli" project_caption="Project Bernoulli" summary=" I was Team Lead of the Structures Team of Project Bernoulli It was our goal to successfully construct and launch a completely student built hybrid rocket engine to fly to 9000 meters. " img_name="Bernoulli"/>
-
-                    </div></ScrollFadeInElement>
+                            <Project    project_name="Project Bernoulli" 
+                                        project_caption="Project Bernoulli" 
+                                        summary=" I was Team Lead of the Structures Team of Project Bernoulli It was our goal to successfully construct and launch a completely student built hybrid rocket engine to fly to 9000 meters. " 
+                                        img_name="Bernoulli"
+                            />
+                        </div>
+                    </ScrollFadeInElement>
                     
-                    <div className="timeline_Circle">2022</div>
-                    <div className="timeline_Circle">2023</div>
+                    <ScrollFadeInElement>
+                        <div className="timeline_Circle">2023</div>
+                    </ScrollFadeInElement>
+                    <ScrollFadeInElement>
+                    <div className="timeline_Line"></div>
+                    </ScrollFadeInElement>
+                    <ScrollFadeInElement>
                     <div className="timeline_Circle">2024</div>
+                    </ScrollFadeInElement>                   
             </div>);
 }
 

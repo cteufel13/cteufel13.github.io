@@ -1,6 +1,6 @@
 .timeline{
     margin: 10% 3%;
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }
 
 #timeline__Heading{
@@ -13,8 +13,9 @@
 
 .timeline_Line {
     position: relative;
-    border : 2px solid orange;
+    /* border : 2px solid orange; */
     height:fit-content;
+    min-height: 40px;
 }
 
 .timeline_Line::after{
@@ -44,39 +45,38 @@
 }
 
 
-.project,.occupation {
+.project{
     position: relative;
-    border: 4px solid black;
+    /* border: 4px solid black; */
     /* border-radius: 30px; */
     padding: 10px;
     font-size: 1em;
     max-width: 40%;
-    left: 55% 
+    left: 55%;
 }
 
-
-
-.project_heading ,.occupation_heading{
-    /* border: 2px solid orange; */
+.project_heading{
     max-width: 100%;
     height: auto;
 }
 
-.project_content,.occupation_content{
+
+
+.project_content{
     display: flex;
     /* border: 4px solid black;    */
 }
-    .project_figure,.occupation_figure{
+    .project_figure{
         /* border: 2px solid orange; */
         width: 150px;
     }
-        .project_picture,.occupation_figure{
+        .project_picture{
             /* border: 2px solid orange; */
             width: 150px;
 
         }
 
-        .project_caption,.occupation_caption{
+        .project_caption{
             /* border: 2px solid orange; */
             font-size: 1em;
             color: black;
@@ -84,9 +84,59 @@
             text-align: center;
         }
 
-    .project_right,.occupation_right{
+    .project_right{
         /* border: 2px solid orange; */
         margin: auto 2% ;
         width: 100%;
         font-size: large;
     }
+
+.occupation {
+    position: relative;
+    /* border: 4px solid black; */
+    /* border-radius: 30px; */
+    padding: 10px;
+    font-size: 1em;
+    max-width: 40%;
+    margin-right: 40%;
+    right: -7.5%;
+    display: flex;
+    
+}
+
+.occupation_logo{
+    display: flex;
+    /* border: 2px solid orange; */
+    max-width: 30%;
+    height: 50px;
+    left: 0;
+    margin: auto 0;
+}
+
+.occupation_content{
+    /* display: flex; */
+    /* border: 2px solid orange; */
+    width: 70%;
+    margin: 0 auto;
+}
+    .occupation_heading{
+        /* border: 2px solid orange; */
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+        .occupation_subheading{
+            /* border: 2px solid orange; */
+            font-size: 1.25em;
+            font-style: italic;
+            font-weight: normal;
+            color: black;
+            margin-top:0;
+            margin-bottom: 0;
+        }
+    
+    .occupation_summary{
+        margin-top: 5%;
+    }
+
