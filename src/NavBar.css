@@ -1,8 +1,34 @@
 .navbar{
-    height: 100px;
+    height: 20%;
     width: 100%;
-    /* background-color: black;
-    border-color: black;
-    border-bottom: 1px solid; */
+    position: fixed;
+    z-index: 2;
+    /* border: 1px solid orange; */
+    align-items: center; /* Centers the box vertically within the container */
     display: flex;
 }
+
+#logo {
+    max-width: 50%;
+    max-height: 50%;
+    margin: auto 0; /* Auto margin will create equal top and bottom spacing */
+    margin-left: 2%;
+    /* border: 1px solid orange; */
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    margin-left: auto;
+    margin-right: 2%;
+}
+
+.nav-links a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0 4%;
+}
+
