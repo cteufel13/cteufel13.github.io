@@ -2,6 +2,7 @@ import './App.css';
 import HeroBackground from  './Hero.js';
 import AboutMe from './AboutMe.js';
 import Navbar from './NavBar.js';
+import Timeline from './Timeline.js';
 // https://transform.tools/html-to-jsx
 
 
@@ -13,6 +14,7 @@ function App() {
       <Navbar />
       <HeroBackground />
       <AboutMe />
+      <Timeline />
     </div>
   );
 }
