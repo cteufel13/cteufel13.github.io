@@ -129,7 +129,7 @@ const Timeline = () =>{
         }
     
     const BloombergStyle = {
-        occupationStyle: {top:"660px",
+        occupationStyle: {top:"610px",
          right: "-30%",
 
         },
@@ -137,7 +137,7 @@ const Timeline = () =>{
     };
 
     const MarlabsStyle = {
-        occupationStyle: {top:"660px",
+        occupationStyle: {top:"630px",
             right: "-30%",
 
         },

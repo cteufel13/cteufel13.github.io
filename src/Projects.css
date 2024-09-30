@@ -1,0 +1,84 @@
+
+.projects__container {
+    /* width: 100%; */
+    margin: 10% 3%;
+    /* border: 4px solid orange; */
+    display: block;
+
+}
+
+.projects__container h1 {
+    margin-left: 10%;
+    font-size: 2.5em;
+
+}
+
+.projects__container h2 {
+    margin-left: 10%;
+}
+
+
+
+
+.projects__list{
+    position: relative;
+    margin-left: 10%;
+    /* border: 2px solid black; */
+    margin-right: 10%;
+    /* gap: 15px; */
+    justify-content: space-around;
+    display: flex;
+}
+
+.Project {
+    position: relative;
+    width: 400px;  /* Adjust to your desired size */
+    height: 266px; /* Adjust to your desired size */
+    overflow: hidden;
+    cursor: pointer;
+    /* border: 4px solid black; */
+    border-radius: 50px;
+}
+
+.Project__Image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    height: 100%;
+    object-fit: cover; /* Ensures the image fills the box while keeping its aspect ratio */
+    transition: opacity 0.3s ease;
+}
+
+.Project__Text{
+    position: absolute;
+    
+    /* border: 4px solid orange; */
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 1.5em;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    /* background-color: white; */
+}
+
+.Project:hover .Project__Image {
+    opacity: 0.1;
+    /* border: 8px solid black; */
+}
+
+.Project:hover .Project__Text{
+    opacity: 1;
+    /* border: 8px solid black; */
+
+}
+
+.Project:hover {
+    border: 4px solid black;
+}

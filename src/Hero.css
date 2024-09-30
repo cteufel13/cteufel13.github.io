@@ -1,14 +1,14 @@
 .hero {
     position: relative;
     /* border : 1px solid blue; */
-    width: 100%;
+    width: 100vw;
     /* margin-top: 0; */
     background-image: url('./imgs/nightsky.jpg');
     background-size: cover;
     background-attachment: fixed;
     display: flex;
     height: 100vh;
-    width: 100%;
+    /* width: 100%; */
     align-items: center;}
 
 
