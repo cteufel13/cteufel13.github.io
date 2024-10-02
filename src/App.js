@@ -2,9 +2,12 @@ import './App.css';
 import HeroBackground from  './Hero.js';
 import AboutMe from './AboutMe.js';
 import Navbar from './NavBar.js';
-
+import Experiences from './Experiences.js';
 import Projects from './Projects.js';
 import Footer from './Footer.js';
+import {Resume,ReachOut} from './Inbetween.js';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import ProjectsArchive from './ProjectsArchive.js';
 
 // https://transform.tools/html-to-jsx
 
@@ -13,13 +16,33 @@ import Footer from './Footer.js';
 function App() {
   
   return (
-    <div>
-      <Navbar />
-      <HeroBackground />
-      <AboutMe />
-      <Projects/>
-      <Footer />
-    </div>
+
+    <Router>
+      <Routes>
+        <Route path="/" element={
+          <div>
+            <Navbar />
+            <HeroBackground />
+            <AboutMe />
+            <Experiences />
+            <Resume />
+            <Projects/>
+            <ReachOut />
+            <Footer />
+
+          </div>} />
+        <Route path="/projects" element={
+          <div>
+            <ProjectsArchive />
+            <Footer />
+
+          </div>
+        } />
+      </Routes>
+    </Router>
+
+
+    
   );
 }
 

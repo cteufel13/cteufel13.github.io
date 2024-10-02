@@ -1,0 +1,67 @@
+.navbar{
+    height: 10%;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    background-color: black;
+    /* border: 1px solid orange; */
+    align-items: center; /* Centers the box vertically within the container */
+    display: flex;
+    top:0;
+    
+}
+
+#logo {
+    max-width: 50%;
+    max-height: 50%;
+    margin: auto 0; /* Auto margin will create equal top and bottom spacing */
+    margin-left: 2%;
+    /* border: 1px solid orange; */
+}
+
+.nav-links{
+    display: flex;
+    justify-content: right;
+    width: 30%;
+    margin-left: auto;
+    margin-right: 2%;
+}
+
+.nav-links a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0 4%;
+}
+
+.content{
+    margin-top: 10%;
+    /* border: 1px solid orange; */
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 2%;
+    text-align: center;
+
+};
+
+
+#header{
+    /* position: relative; */
+    width: 100%;
+    /* border: 2px solid orange; */
+    text-align: center;
+}
+
+.projects{
+    justify-content: space-around;
+    /* border: 2PX solid orange; */
+    width: 100%;
+    display: flex;
+}
+

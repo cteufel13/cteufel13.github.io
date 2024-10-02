@@ -1,0 +1,80 @@
+
+
+.Inbetween__Container{
+    background-image: url("./imgs/nightsky.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    height:300px;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.Resume__Content {
+
+    padding: 10%;
+    
+}
+
+.Resume__Content h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: white;
+    margin: 0;
+}
+
+#CVLink{
+    color: white;
+    text-decoration: none;
+    /* font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 1rem;
+    display: block; */
+}
+
+
+.Container{
+    width: 100%;
+    /* justify-content: center; */
+    /* border: 2px solid black; */
+    
+}
+
+.Content{
+    /* position: relative; */
+    /* border: 4px solid black; */
+    border-radius: 50px;
+    width: 30%;
+    margin: 4% auto ;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;  /* Make elements stack vertically, with the heading above the image */
+    text-align: center;
+}
+
+#mailto{
+    text-decoration: none;
+    color : black;
+}
+
+.Container h2{
+    width: 40%;
+    font-size: 2em;
+    font-weight: 400;
+    font-style: bold;
+    width: 100%;
+    text-align: center;
+    /* border: 2px solid black; */
+}
+.Content h1{
+    font-size: 2em;
+    font-weight: 800;
+    font-style: bold;
+    width: 100%;
+}
+
+
+
+

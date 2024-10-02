@@ -1,0 +1,88 @@
+
+.Experiences {
+    /* border: 1px solid orange; */
+    margin: 10% 3%;
+    display: block;
+}
+
+
+#Experiences__Heading{
+    /* border: 1px solid orange; */
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 2.5em;
+    font-weight: bold;
+    color: black;
+    margin-top: 0;
+}
+
+#Experiences__Content{
+    
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    /* width: 100%; */
+    flex-direction: row;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+
+}
+
+.Experiences__Languages {
+    width: 60%;
+}
+
+.Experiences__Icons img{
+    /* width: 100px; */
+    height: 80px;
+    margin: 10px;
+    filter: grayscale(100%);
+    transition: filter 0.5s ease;
+}
+.Experiences__Icons:hover img:hover{
+    filter: grayscale(0%);
+} 
+
+.Experiences__IconsHeader{
+    font-size: 1.5em;
+    font-weight: 400;
+    font-style: bold;
+}
+
+.subheader{
+    font-size: 2em;
+    font-weight: 400;
+    font-style: bold;
+}
+
+.IconClass{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin-right: 10%;
+}
+
+.Experiences__Profile{
+    display: flex;
+    width: 100%;
+    /* border: 1px solid blue; */
+    align-items: center;
+    margin-top: 10%;
+    /* justify-content: center; */
+}
+
+.Experiences__Profile img{
+    width: 100px;
+    height: auto;
+
+}
+
+.Experiences__Profile h3 {
+    font-size: 1.5em;
+    font-weight: 400;
+    font-style: bold;
+    margin-left: 10%;
+}
+
+
+/* Experiences__Profile */
