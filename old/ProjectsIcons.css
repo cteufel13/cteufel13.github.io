@@ -1,114 +1,131 @@
 
-.Project__Section__Container{
-    display: block;
+.projects__container {
+    /* width: 100%; */
     margin: 10% 3%;
+    /* border: 4px solid orange; */
+    display: block;
+
 }
 
-.Project__Section__Header{
+.projects__container h1 {
     margin-left: 10%;
     font-size: 2.5em;
+
 }
 
-.Project__Section__SubHeader{
+.projects__container h2 {
     margin-left: 10%;
     font-size: 2em;
     font-weight: 400;
+
 }
 
-.Projects__Containers{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    /* border: 4px solid red; */
-    gap:15px;
-    /* width: 100%; */
+.projects__container h2 {
+    margin-left: 10%;
 }
 
-.Projects__List{
+
+
+
+.projects__list{
     position: relative;
     margin-left: 10%;
     /* border: 2px solid black; */
     margin-right: 10%;
     /* gap: 15px; */
-    /* justify-content: space-between; */
-    /* flex-direction: row; */
-    /* display: flex; */
+    justify-content: space-around;
+    display: flex;
 }
 
-.Project__Icon__Container{
+.ProjectIcon {
     position: relative;
     width: 400px;  /* Adjust to your desired size */
     height: 266px; /* Adjust to your desired size */
     overflow: hidden;
     cursor: pointer;
-    /* border: 2px solid orange; */
+    border: 2px solid white;
     background: rgba(0, 0, 0, 0); /* Initially transparent */
     transition: background 0.3s ease; /* Smooth transition for the overlay */
     border-radius: 50px;
-    
 }
 
-.Project__Icon__Image{
+.Project__Image {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: auto;
     height: 100%;
-    object-fit: cover; 
-    opacity: 1;
+    object-fit: cover; /* Ensures the image fills the box while keeping its aspect ratio */
     transition: opacity 0.5s ease;
     background-color: white;
 }
 
-.Project__Icon__MagGlas__Container{
-    height: 100%;
-    width: 100%;
-    opacity: 1;
-    z-index: 2;
-    transition: opacity 0.5s ease;
-    /* border: 2px solid green; */
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.Project__Icon__MagGlas {
-    height: 70px;
-    width: 70px;
-    /* position: absolute; */
-    /* top: 40%;
-    left: 45%; */
-}
-
-.Project__Icon__Container:hover .Project__Icon__Image {
-    opacity: 0;
-}
-
-.Project__Icon__Text{
+.Project__Darkening{
     position: absolute;
-    text-align: center;
-    bottom: 70%;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.5s ease;
+
+}
+
+.Project__Text{
+    position: absolute;
+    bottom: -10px;
     width: 100%;
     height: 40px;
-    z-index: 1s;
+    z-index: 20;
     opacity: 1;
-    font-size: 2rem;
-    font-weight: 600;
     /* border: 4px solid red; */
-    margin: auto;
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: center;
     opacity: 0;
+    color: white;
+    transition: opacity 0.5s ease;
+
+}
+
+.Project:hover .Project__Text{
+    opacity: 1;
+}
+
+.Project:hover .Project__Image {
+    opacity: 0.2;
+}
+
+.Project:hover .Project__Darkening{
+    opacity: 1;
+    background-color:  rgba(0, 0, 0, 0.84);
+    /* border: 8px solid black; */
+}
+
+.Project:hover {
+    opacity: 1;
+    /* z-index: 10; */
+    font-size: 20px;
+    text-align: center;
+}
+
+.Project__MagGlas{
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    z-index: 1;
     transition: opacity 0.5s ease;
 }
 
-.Project__Icon__Container:hover .Project__Icon__Text{
+.MagGlas{
+    height: 20%;
+    position: absolute;
+    top: 40%;
+    left: 45%;
+}
+
+.Project__MagGlas:hover {
     opacity: 1;
 }
 
-.Project__Icon__Container:hover{
-    opacity: 1;
-}
 
 .projects__Link__Container{
     /* border:2px solid orange; */

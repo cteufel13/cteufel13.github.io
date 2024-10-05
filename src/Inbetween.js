@@ -16,8 +16,6 @@ export const ReachOut = () => {
     
     return(
         <div className='Container'>
-            <h2> If you have any questions or just want to chat, feel free to send me a mail!</h2>
-
             <a href="mailto:carloleonteufel@gmail.com" id="mailto">
 
                 <div className="Content">

@@ -1,11 +1,33 @@
 import React from "react";
 import Logo from './imgs/logo.png';
 import './ProjectsArchive.css';
-// import './NavBar.css';
-import { Link } from 'react-router-dom';
-import { ProjectBernoulli,ProjectBachelorsThesis,ProjectThisWebsite,ProjectHDS } from './Projects.js';
+import { Link,useNavigate} from 'react-router-dom';
+import { all_projects,ProjectIcons } from "./Projects";
 
-const ProjectsArchive = () => {
+export const NavBarSmall = ({message}) => {
+    const navigate = useNavigate();  // Create a navigate function
+
+    // Function to handle back navigation
+    const handleGoBack = () => {
+    navigate(-1);  // This takes the user to the previous page in history
+    };
+
+    const handleGoHome = () => {
+        navigate("/");  // This takes the user to the homepage
+    }
+
+    return (
+        <div className="navbar">
+            <img src={Logo} id="logo" onClick={handleGoHome}></img>
+
+            <div className="nav-links">
+            <h1 onClick={handleGoBack} id="backbutton">{message}!</h1>
+            </div>
+        </div>
+    );
+}
+
+export const ProjectsArchive = () => {
 
     const HDSStyles = { imageStyle:
         {width: "100%",
@@ -14,23 +36,10 @@ const ProjectsArchive = () => {
 
     return (
         <div>
-            <div className="navbar">
-                <img src={Logo} id="logo"></img>
-
-                <div className="nav-links">
-                <Link to="/">Back to Homepage!</Link>
-                </div>
-            </div>
+            < NavBarSmall message="Back to Homepage" />
             <div className="content"> 
                 <h1 >Projects Archive</h1>
-                <div className="projects" >
-                    <ProjectBernoulli />
-                    <ProjectBachelorsThesis />
-                    <ProjectHDS />
-                </div>
-                <div className="projects" >
-                    <ProjectThisWebsite />    
-                </div>
+                <ProjectIcons projects={all_projects}/>
 
             </div>
             
@@ -38,4 +47,4 @@ const ProjectsArchive = () => {
     );
 }
 
-export default ProjectsArchive;
+// export default ProjectsArchive;

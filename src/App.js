@@ -3,11 +3,11 @@ import HeroBackground from  './Hero.js';
 import AboutMe from './AboutMe.js';
 import Navbar from './NavBar.js';
 import Experiences from './Experiences.js';
-import Projects from './Projects.js';
 import Footer from './Footer.js';
 import {Resume,ReachOut} from './Inbetween.js';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import ProjectsArchive from './ProjectsArchive.js';
+import{ ProjectsSection , ProjectDetails} from './Projects.js';
+import {ProjectsArchive} from './ProjectsArchive.js';
 
 // https://transform.tools/html-to-jsx
 
@@ -26,19 +26,23 @@ function App() {
             <AboutMe />
             <Experiences />
             <Resume />
-            <Projects/>
+            <ProjectsSection/>
             <ReachOut />
             <Footer />
 
           </div>} />
+        <Route path="/projects/:projectName" element={
+          <div>
+            <ProjectDetails/>
+            <Footer/>
+            </div>
+          }/>
         <Route path="/projects" element={
           <div>
-            <ProjectsArchive />
-            <Footer />
-
-          </div>
-        } />
-      </Routes>
+            <ProjectsArchive/>
+            <Footer/>
+          </div>}/>
+\      </Routes>
     </Router>
 
 
