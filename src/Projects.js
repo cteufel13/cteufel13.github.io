@@ -25,7 +25,8 @@ export const ProjectIcons = ({projects}) => {
     const navigate = useNavigate();
 
     const handleIconClick = (projectName) => {
-      navigate(`/projects/${projectName}`);
+        window.scrollTo(0, 0);
+        navigate(`/projects/${projectName}`);
     };
 
     return (
@@ -73,8 +74,12 @@ export const ProjectsSection = () => {
     const featuredProjects = all_projects.filter(project => project.id >= 1 && project.id <= 3);
     const otherProjects = all_projects.filter(project => project.id > 3);
 
+    const handleClick = () => {
+        window.scrollTo(0, 0); // Scroll to the top
+      };
+
     return (
-        <div className="Project__Section__Container">
+        <div className="Project__Section__Container" id="ProjectSection">
             <h1 className="Project__Section__Header">Projects I've worked on</h1>
             <h2 className="Project__Section__SubHeader" >Featured Projects</h2>
 
@@ -85,7 +90,7 @@ export const ProjectsSection = () => {
             <div className="Projects__List">
                 <ProjectIcons projects={otherProjects}/>
             </div>
-            <Link to="/projects" className='projects__Link__Container'>
+            <Link to="/projects" className='projects__Link__Container' onClick= {handleClick}>
                 <div className='projects__Link' >
                     <h1>Project Archive</h1>
                 </div>
@@ -94,3 +99,4 @@ export const ProjectsSection = () => {
         </div>
     );
 };
+

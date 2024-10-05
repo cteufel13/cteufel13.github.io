@@ -24,11 +24,12 @@
     margin-right: 2%;
 }
 
-.nav-links a{
+.nav-links p{
     color: white;
     text-decoration: none;
     font-size: 1.5em;
     font-weight: bold;
     margin: 0 4%;
+    cursor: pointer;
 }
 

@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import './NavBar.css';
 import Logo from './imgs/logo.png';
 
+
+
 const NavBar = () => {
     
     const [backgroundColor, setBackgroundColor] = useState("rgba(0, 0, 0, 0)");
@@ -35,6 +37,21 @@ const NavBar = () => {
         };
       }, []);
 
+      const handleScrollToAbout = () => {
+        const section = document.getElementById("about-me");
+        if (section) {
+            const topOffset = section.getBoundingClientRect().top + window.scrollY - 150; // Scroll to the section but leave 150px space
+            window.scrollTo({ top: topOffset, behavior: "smooth" });
+        }
+      };
+
+      const handleScrollToProject = () => {
+        const section = document.getElementById("ProjectSection");
+        if (section) {
+            const topOffset = section.getBoundingClientRect().top + window.scrollY - 150; // Scroll to the section but leave 150px space
+            window.scrollTo({ top: topOffset, behavior: "smooth" });
+        }
+      };
 
 
     return(
@@ -42,9 +59,9 @@ const NavBar = () => {
             <img src = {Logo} alt="logo" id="logo"/>
 
             <div className="nav-links">
-                <a href="#about-me">About Me</a>
-                <a href="#projects">Projects</a>
-                <a href="#misc">Cool Stuff</a>
+                <p onClick={handleScrollToAbout}>About Me</p>
+                <p onClick={handleScrollToProject}>Projects</p>
+                <p>Cool Stuff</p>
             </div>
 
         </div>
