@@ -1,10 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.a7bf1ff0.css",
-    "main.js": "/static/js/main.cfa6f9cc.js",
+    "main.css": "/static/css/main.d1d250a3.css",
+    "main.js": "/static/js/main.eb0d0a2c.js",
     "static/js/453.d5e1fdaa.chunk.js": "/static/js/453.d5e1fdaa.chunk.js",
     "static/media/about-me__background.png": "/static/media/about-me__background.6ad7abb14a3e938b7e4a.png",
+    "static/media/Bernoulli_4.png": "/static/media/Bernoulli_4.c42f0d4148bc663b2fd6.png",
+    "static/media/Bernoulli_1.png": "/static/media/Bernoulli_1.88e6db68e1a15cec53e9.png",
+    "static/media/Bernoulli_3.png": "/static/media/Bernoulli_3.6d4114b955f85646b569.png",
     "static/media/nightsky.jpg": "/static/media/nightsky.0bb1df47290fc91091bb.jpg",
+    "static/media/Bernoulli_2.png": "/static/media/Bernoulli_2.050d944477b04eedf587.png",
     "static/media/Project1.png": "/static/media/Project1.3c9dd392b38199e56f29.png",
     "static/media/BachelorsThesis.png": "/static/media/BachelorsThesis.69e0e2e9e57da2466a14.png",
     "static/media/Bernoulli.png": "/static/media/Bernoulli.3ca4ed840e28fb605c17.png",
@@ -30,12 +34,12 @@
     "static/media/Marlabs.png": "/static/media/Marlabs.48aaa25df07b4e4ee5b7.png",
     "static/media/cssLogo.svg": "/static/media/cssLogo.5da907d7f5cda48f0931.svg",
     "index.html": "/index.html",
-    "main.a7bf1ff0.css.map": "/static/css/main.a7bf1ff0.css.map",
-    "main.cfa6f9cc.js.map": "/static/js/main.cfa6f9cc.js.map",
+    "main.d1d250a3.css.map": "/static/css/main.d1d250a3.css.map",
+    "main.eb0d0a2c.js.map": "/static/js/main.eb0d0a2c.js.map",
     "453.d5e1fdaa.chunk.js.map": "/static/js/453.d5e1fdaa.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a7bf1ff0.css",
-    "static/js/main.cfa6f9cc.js"
+    "static/css/main.d1d250a3.css",
+    "static/js/main.eb0d0a2c.js"
   ]
 }
