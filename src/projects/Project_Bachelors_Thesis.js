@@ -1,9 +1,15 @@
 import React from 'react';
 import { NavBarSmall } from '../ProjectsArchive';
 import './projectdetail.css';
+import { Gallery } from './project_utils';
 
 
 const Project_Bachelors_Thesis = () => {
+    const images = [
+        require('./project_imgs/BT_1.png'),
+        require('./project_imgs/BT_2.png'),
+        require('./project_imgs/BT_3.png'),
+      ];
     return (
         <div>
             < NavBarSmall message="Back" />
@@ -18,11 +24,17 @@ const Project_Bachelors_Thesis = () => {
 
                 </div>
                 <div className='MainContent'>
-                    <p id="Description">
-                    Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam nec mi a massa feugiat scelerisque. Aliquam erat volutpat. Morbi vel semper mauris. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Suspendisse eget diam sagittis, gravida lorem non, molestie neque. Nunc quam purus, maximus at risus nec, auctor ultrices quam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras at nibh at erat mattis lacinia at non turpis. Curabitur vehicula est nec suscipit egestas. Nam sit amet nibh volutpat, convallis nisi quis, varius nulla. Quisque ac tortor commodo, sollicitudin velit ut, vehicula nisi. Mauris eget ultricies tellus, et dictum diam. Sed eget neque ipsum.
-
-                    Sed id elit ullamcorper est convallis luctus ac vitae lorem. Nam ante nibh, aliquam sed arcu vitae, pulvinar tincidunt mi. Pellentesque in nibh hendrerit, posuere nisl ac, faucibus lacus. Aenean ipsum justo, dictum at turpis sed, vehicula dignissim dolor. Sed eget erat orci. Integer ligula orci, gravida a sollicitudin ut, sodales et nibh. Curabitur bibendum ex eget quam bibendum, at feugiat urna consequat. Donec id imperdiet tortor, sit amet elementum mauris. Aliquam sed felis lorem. Sed at purus ultricies, convallis dolor nec, accumsan quam. Curabitur ut sodales leo. Quisque convallis eros nibh, nec tristique ex sodales quis. Ut lacus dolor, finibus ac scelerisque at, mollis vel elit. Nam ullamcorper orci tincidunt diam venenatis egestas. Maecenas vel ipsum id dolor rutrum commodo nec bibendum erat.
+                    <p className="Description">
+                    The motivation for this project stemmed from a need to improve <em>how complex, real-world systems are modeled for control purposes</em>. Traditional system identification methods, while widely used, rely heavily on predefined models that require extensive parameterization and testing. These methods can be rigid, often failing to capture all the nuances of dynamic systems, particularly those that are less understood or highly variable. Given the limitations of these approaches, the project set out to explore more advanced, flexible alternatives that could better address the challenges of modern system identification.                    
                     </p>
+                    <p className="Description">
+                    State Space Models (SSMs) emerged as a promising solution due to their ability to efficiently handle long-range temporal relationships and maintain parameter efficiency, unlike dense neural networks, which often struggle with sequence length and contextual data. SSMs are well-suited for tasks requiring dynamic system modeling over time, particularly because of their strong foundation in control theory. The project focused on applying SSMs to model a parafoil system, a critical component in aerospace recovery technologies. Parafoils provide a fuel-efficient way to recover payloads, which is key to improving the reusability of launch systems and reducing operational costs for companies like SpaceX and Blue Origin.
+                    </p>
+                    <p className="Description">
+                    The project unfolded in two key phases: first, we trained and evaluated the SSM model using clean simulation data to establish baseline performance. Then, we introduced noisy data to assess the model’s robustness in more realistic conditions. By comparing the performance of SSMs with traditional dense neural networks, it became clear that SSMs held a significant advantage in maintaining context over long sequences without a drastic increase in parameters. This project not only aimed to advance the capabilities of system identification for parafoil systems but also demonstrated the broader potential of SSMs in handling complex dynamic systems, with future applications extending beyond aerospace.                
+                    </p>
+                    <Gallery images={images} customStyle={{border: "10px solid red "}} />
+
                 </div>
             </div>
         </div>

@@ -25,7 +25,7 @@ function App() {
             <HeroBackground />
             <AboutMe />
             <Experiences />
-            <Resume />
+            {/* <Resume /> */}
             <ProjectsSection/>
             <ReachOut />
             <Footer />

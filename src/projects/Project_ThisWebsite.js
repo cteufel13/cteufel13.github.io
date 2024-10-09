@@ -19,10 +19,8 @@ const Project_ThisWebsite = () => {
 
                 </div>
                 <div className='MainContent'>
-                    <p id="Description">
-                    Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam nec mi a massa feugiat scelerisque. Aliquam erat volutpat. Morbi vel semper mauris. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Suspendisse eget diam sagittis, gravida lorem non, molestie neque. Nunc quam purus, maximus at risus nec, auctor ultrices quam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras at nibh at erat mattis lacinia at non turpis. Curabitur vehicula est nec suscipit egestas. Nam sit amet nibh volutpat, convallis nisi quis, varius nulla. Quisque ac tortor commodo, sollicitudin velit ut, vehicula nisi. Mauris eget ultricies tellus, et dictum diam. Sed eget neque ipsum.
-
-                    Sed id elit ullamcorper est convallis luctus ac vitae lorem. Nam ante nibh, aliquam sed arcu vitae, pulvinar tincidunt mi. Pellentesque in nibh hendrerit, posuere nisl ac, faucibus lacus. Aenean ipsum justo, dictum at turpis sed, vehicula dignissim dolor. Sed eget erat orci. Integer ligula orci, gravida a sollicitudin ut, sodales et nibh. Curabitur bibendum ex eget quam bibendum, at feugiat urna consequat. Donec id imperdiet tortor, sit amet elementum mauris. Aliquam sed felis lorem. Sed at purus ultricies, convallis dolor nec, accumsan quam. Curabitur ut sodales leo. Quisque convallis eros nibh, nec tristique ex sodales quis. Ut lacus dolor, finibus ac scelerisque at, mollis vel elit. Nam ullamcorper orci tincidunt diam venenatis egestas. Maecenas vel ipsum id dolor rutrum commodo nec bibendum erat.
+                    <p className="Description">
+                        In September 2024 I started working on this personal website. I felt like it is the best way to portray my skills and projects in a visual manner and it allowed me to learn something new. I began touching on CSS and HTML as the framework before then later expanding to JS later on. One thing that I wanted to have for this is a foundation for future testing -  in other words - I wanted to have something that I could always work on and change and improve the further I go in my career. If you have any tips and tricks for me, please contact me!
                     </p>
                 </div>
             </div>

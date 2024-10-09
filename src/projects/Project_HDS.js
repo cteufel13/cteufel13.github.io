@@ -1,11 +1,19 @@
 import React from 'react';
 import { NavBarSmall } from '../ProjectsArchive';
 import './projectdetail.css';
+import { Gallery } from './project_utils';
+
 
 
 
 
 const Project_HDS = () => {
+
+    const images = [
+        require('./project_imgs/HDS_1.png'),
+        require('./project_imgs/HDS_2.png'),
+        require('./project_imgs/HDS_3.png'),
+      ];
     return (
         <div>
             < NavBarSmall message="Back" />
@@ -23,11 +31,16 @@ const Project_HDS = () => {
 
                     </div>
                     <div className='MainContent'>
-                        <p id="Description">
-                        Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam nec mi a massa feugiat scelerisque. Aliquam erat volutpat. Morbi vel semper mauris. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Suspendisse eget diam sagittis, gravida lorem non, molestie neque. Nunc quam purus, maximus at risus nec, auctor ultrices quam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras at nibh at erat mattis lacinia at non turpis. Curabitur vehicula est nec suscipit egestas. Nam sit amet nibh volutpat, convallis nisi quis, varius nulla. Quisque ac tortor commodo, sollicitudin velit ut, vehicula nisi. Mauris eget ultricies tellus, et dictum diam. Sed eget neque ipsum.
-
-                        Sed id elit ullamcorper est convallis luctus ac vitae lorem. Nam ante nibh, aliquam sed arcu vitae, pulvinar tincidunt mi. Pellentesque in nibh hendrerit, posuere nisl ac, faucibus lacus. Aenean ipsum justo, dictum at turpis sed, vehicula dignissim dolor. Sed eget erat orci. Integer ligula orci, gravida a sollicitudin ut, sodales et nibh. Curabitur bibendum ex eget quam bibendum, at feugiat urna consequat. Donec id imperdiet tortor, sit amet elementum mauris. Aliquam sed felis lorem. Sed at purus ultricies, convallis dolor nec, accumsan quam. Curabitur ut sodales leo. Quisque convallis eros nibh, nec tristique ex sodales quis. Ut lacus dolor, finibus ac scelerisque at, mollis vel elit. Nam ullamcorper orci tincidunt diam venenatis egestas. Maecenas vel ipsum id dolor rutrum commodo nec bibendum erat.
+                        <p className="Description">
+                        The motivation for this project arose from addressing a key issue in model-based reinforcement learning: the gap between simulation and real-world application. Differentiable Simulation Reinforcement Learning (DSRL) offers the advantage of superior sample efficiency by leveraging the analytic gradient of a differentiable simulation, which enables more efficient optimization. However, this method often struggles with issues such as convergence to local minima and instability in highly dynamic environments, which hinders its generalizability to real-world applications. These limitations, particularly in contact-rich environments, create a pressing need to explore methods that improve sim-to-real transfer and overall stability.
                         </p>
+                        <p className="Description">
+                        This project focused on exploring the potential of Hybrid Differentiable Simulation (HDS) to overcome these limitations by integrating real-world data with simulation environments. While existing approaches like Policy Optimization via Differentiable Simulation (PODS) demonstrated effectiveness in virtual setups, they often failed to generalize well when applied to real-life scenarios. By combining differentiable simulation with real-world data, HDS aims to reduce biases introduced by inaccuracies in simulation models, thereby enhancing both the stability and accuracy of policy learning. Additionally, we introduced stochastic policies to improve exploration capabilities, addressing one of the key weaknesses of deterministic approaches.
+                        </p>
+                        <p className="Description">
+                        The project unfolded in two phases: first, we developed and implemented a high-quality, open-source version of PODS using the BRAX physics engine and JAX framework to create a parallelized, scalable solution. Then, we extended PODS into HDS by integrating real-world data, testing the hybrid method on a simulated testbed. Through these experiments, we demonstrated that HDS significantly reduces the sim-to-real gap and improves performance. Our findings suggest that incorporating real-world data as part of the training process helps smooth the loss landscape, acting as a regularizer and leading to more robust policies in dynamic environments. This hybrid approach offers a promising direction for future reinforcement learning applications in real-world robotics and control systems.
+                        </p>
+                        <Gallery images={images}/>
                     </div>
             </div>        
         </div>
