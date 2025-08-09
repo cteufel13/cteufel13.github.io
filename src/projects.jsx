@@ -72,33 +72,34 @@ const Project = ({ title, description, link, tags, view }) => {
                     </div>
                 </div>
             </div>)
-                : (// One project row
+                : (
                     <a href={link} className="group block">
-                        <div className="grid grid-cols-[88px_1fr] gap-6 py-6 border-b border-black/5">
+                        <div className="grid  gap-6 py-6  pb-12 " > {/* grid-cols-[88px_1fr]*/}
 
-                            <div className="w-20 h-20 rounded-full overflow-hidden shrink-0">
-                                <img
-                                    src={imageMap[link]}
-                                    alt={title}
-                                    className="w-full h-full object-cover grayscale contrast-125 brightness-90"
-                                />
-                            </div>
 
-                            <div className="flex flex-col min-h-[80px]">
-                                <h3 className=" font-[Manrope]font-semibold tracking-tight text-[20px] leading-tight group-hover:text-black">
-                                    {title}
-                                </h3>
-                                <p className=" font-[Manrope] flex-1 text-[14px] text-black/60 line-clamp-2">
+
+                            <div className="flex min-h-[80px]">
+                                <div className='flex flex-col w-3/10'>
+                                    <h3 className=" font-[Manrope] text-2xl leading-tight group-hover:text-black">
+                                        {title}
+                                    </h3>
+
+                                </div>
+
+                                <p className=" font-[Manrope] flex-1 font-normal text-[rgb(51,51,51)] text-[16px] leading-[24px]">
                                     {description}
                                 </p>
-                                <div className="mt-2 text-sm text-black/40 flex gap-3">
-                                    {tags.map((t, i) => (
-                                        <span key={i} className="flex items-center gap-1">
-                                            <Icon title={t} />
-                                            {i < tags.length - 1 && <span>,</span>}
-                                        </span>
-                                    ))}
+                                <div className=' w-2/10  flex justify-center'>
+                                    <div className="w-20 h-20 rounded-full overflow-hidden shrink-0">
+                                        <img
+                                            src={imageMap[link]}
+                                            alt={title}
+                                            className="w-full h-full object-cover grayscale contrast-125 brightness-90"
+                                        />
+                                    </div>
                                 </div>
+
+
                             </div>
                         </div>
                     </a>
@@ -113,11 +114,11 @@ const Project = ({ title, description, link, tags, view }) => {
 
 const Projects = () => {
 
-    const [view, setView] = useState("grid");
+    const [view, setView] = useState("list");
 
 
 
-    return <div className="flex  flex-col h-full px-5 ">
+    return <div className="flex  flex-col  px-5 ">
 
         <div className='mx-15 my-5  flex justify-between items-center'>
             <p className=" font-normal font-[Manrope] text-[18px] leading-[22px]">
@@ -142,8 +143,8 @@ const Projects = () => {
 
         </div>
 
-        <div className={`${view === "grid" ? "grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3" : "flex flex-col gap-4"} gap-4  mx-15 h-full`}>
-            <Project title="Project Bernoulli" description="Shoot for the Stars" link="Bernoulli" tags={["python", "c++"]} view={view}></Project>
+        <div className={`${view === "grid" ? "grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6" : "flex flex-col divide-y divide-black/5 "}   mx-15 h-full`}>
+            <Project title="Project Bernoulli" description="Project BERNOULLI is an ARIS student-built hybrid rocket combining three past systems into one, featuring autonomous recovery and a particle detector. It’s designed for the 9,000 m SRAD category at the 2023 European Rocketry Challenge." link="Bernoulli" tags={["python", "c++"]} view={view}></Project>
             <Project title="RP4B" link="RP4B" description="A C++ options trading platform designed for paper trading and strategy development. This modular system provides real-time data processing, options chain analysis, and automated trading capabilities through the Alpaca API."
                 tags={["c++", "cmake"]} view={view}></Project>
             <Project title="Financial Regime Clustering" description="Regime‑Based Portfolio Classification - an ML approach" link="SPD" tags={["python"]} view={view}></Project>
