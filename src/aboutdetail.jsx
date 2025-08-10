@@ -1,11 +1,11 @@
 const Aboutdetail = () => (
-    <section id="about" className="border-b-1 border-b-gray-100 w-full px-5 my-20 pb-10">
+    <section id="About Me" className="scroll-mt-[12vh] border-b-1 border-b-gray-100 w-full px-5 my-20 pb-10">
         <div className="mx-15 ">
-            <h2 className="font-[Manrope] text-[18px] leading-[22px] mb-4 ">About Me</h2>
+            <h2 className="font-[Manrope] text-[18px] leading-[22px] mb-12 ">About Me</h2>
 
 
             <div className=" grid gap-8 md:grid-cols-[2fr_1fr] items-start">
-                <div className="flex flex-col font-[Manrope] gap-y-5">
+                <div className="flex flex-col font-[Manrope] text-[rgb(51,51,51)] gap-y-5">
                     <p>
                         I’m Carlo, based between New York and Zürich, pursuing a Master’s in Robotics, Systems, and Control at ETH Zürich.
                         I design and analyze intelligent systems at the intersection of robotics, control, and machine learning—building algorithms that help machines perceive, decide, and act in complex environments.
@@ -19,7 +19,7 @@ const Aboutdetail = () => (
 
                 </div>
 
-                <div className="flex justify-center my-auto">
+                <div className="flex justify-center">
                     <ul className="font-[Manrope] text-[14px] leading-[20px] text-[#666] space-y-2 ">
                         <li>Interests: control, planning, ML , Data-Driven Decision Making</li>
                         <li>Programming: Python, C++, JavaScript (HTML/CSS)</li>

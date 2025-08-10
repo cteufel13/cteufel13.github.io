@@ -57,21 +57,23 @@ const Icon = ({ title }) => {
 const Project = ({ title, description, link, tags, view }) => {
 
     return (
-        <>
-            {view === "grid" ? (<div className="w-full aspect-[1/1.25]">
-                <img src={imageMap[link]} className=" w-full h-90/100 filter object-cover grayscale contrast-125 brightness-90" />
-                <div className='w-full h=10/100'>
-                    <p className="font-[Manrope] text-[14px] text-[#2b2b2b] mt-3"> {title}</p>
-                    <div className="flex flex-wrap gap-1 font-[Manrope] text-[14px] leading-[18px] font-normal items-center filter grayscale text-[#9c9c9c] hover:grayscale-0 hover:text-black">
-                        ↳ {tags.map((tag, i) => (
-                            <span key={i} className="flex items-center gap-1">
-                                <Icon title={tag} />
-                                {i < tags.length - 1 && ","}
-                            </span>
-                        ))}
+        <div >
+            {view === "grid" ? (<a className='group'>
+                <div className="w-full aspect-[1/1.25]">
+                    <img src={imageMap[link]} className=" w-full h-90/100 filter object-cover grayscale contrast-125 brightness-90 group-hover:grayscale-0 group-hover:contrast-100 group-hover:brightness-100 transition-all duration-500 ease-in-out" />
+                    <div className='w-full h=10/100'>
+                        <p className="font-[Manrope] text-[14px] text-[#2b2b2b] mt-3"> {title}</p>
+                        <div className="flex flex-wrap gap-1 font-[Manrope] text-[14px] leading-[18px] font-normal items-center filter grayscale text-[#9c9c9c] hover:grayscale-0 hover:text-black">
+                            ↳ {tags.map((tag, i) => (
+                                <span key={i} className="flex items-center gap-1">
+                                    <Icon title={tag} />
+                                    {i < tags.length - 1 && ","}
+                                </span>
+                            ))}
+                        </div>
                     </div>
                 </div>
-            </div>)
+            </a>)
                 : (
                     <a href={link} className="group block">
                         <div className="grid  gap-6 py-6  pb-12 " > {/* grid-cols-[88px_1fr]*/}
@@ -94,7 +96,7 @@ const Project = ({ title, description, link, tags, view }) => {
                                         <img
                                             src={imageMap[link]}
                                             alt={title}
-                                            className="w-full h-full object-cover grayscale contrast-125 brightness-90"
+                                            className="w-full h-full object-cover grayscale group-hover:grayscale-0 contrast-125 group-hover:contrast-100 brightness-90 group-hover:brightness-100 transition-all duration-100 ease-in-out"
                                         />
                                     </div>
                                 </div>
@@ -105,7 +107,7 @@ const Project = ({ title, description, link, tags, view }) => {
                     </a>
 
                 )}
-        </>
+        </div>
 
     )
 
@@ -118,7 +120,7 @@ const Projects = () => {
 
 
 
-    return <div className="flex  flex-col  px-5 ">
+    return <div id="Projects" className="flex  flex-col scroll-mt-[18vh] px-5 ">
 
         <div className='mx-15 my-5  flex justify-between items-center'>
             <p className=" font-normal font-[Manrope] text-[18px] leading-[22px]">

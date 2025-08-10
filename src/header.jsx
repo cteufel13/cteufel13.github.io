@@ -27,14 +27,14 @@ const Header = () => {
         };
     }, []);
 
-    return <div className="w-full h-3/32 items-center flex px-5">
+    return <div className="w-full h-3/32 items-center flex px-5 fixed top-0 left-0 bg-white z-1000">
         <div className="h-full flex-1  flex items-center ">
-            <h1 className=" font-[Manrope] font-light ml-15">Carlo Teufel</h1>
+            <a className=" font-[Manrope] font-light ml-15" href="https://cteufel13.github.io/">Carlo Teufel</a>
         </div >
         <div className="h-full w-[260px]">
             <nav className=" hidden md:flex h-full w-full justify-between items-center ">
-                <a className="h-full flex items-center justify-center font-[Manrope] font-light w-1/3 text-center">About </a>
-                <a className="h-full flex items-center justify-center font-[Manrope] font-light w-1/3 text-center"> Projects </a>
+                <a href="/#About Me" className="h-full scroll-smooth motion-reduce:scroll-auto flex items-center justify-center font-[Manrope] font-light w-1/3 text-center">About </a>
+                <a href="/#Projects" className="h-full flex items-center justify-center font-[Manrope] font-light w-1/3 text-center"> Projects </a>
                 <a className="h-full flex items-center justify-center font-[Manrope] font-light w-1/3 text-center"> CV</a>
             </nav>
             <div className="md:hidden h-full w-full flex ">

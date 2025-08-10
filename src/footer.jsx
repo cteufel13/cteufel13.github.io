@@ -12,9 +12,9 @@ const Footer = () => {
                     <h2 className='font-[Manrope] font-light text-1xl text-center  '> Robotics and Data Science</h2>
                 </div>
                 <div className='flex flex-row gap-5 font-[Manrope]'>
-                    <a> About</a>
-                    <a> Projects</a>
-                    <a> Contact </a>
+                    <a href="#About Me"> About</a>
+                    <a href="#Projects"> Projects</a>
+                    <a href="mailto:cteufel@ethz.ch"> Contact </a>
                 </div>
 
                 <div className='flex flex-row h=1/2  gap-14'>
