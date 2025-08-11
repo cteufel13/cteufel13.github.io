@@ -1,4 +1,5 @@
 import { useState, useRef, useEffect } from "react";
+import { HashLink } from "react-router-hash-link";
 
 
 
@@ -33,10 +34,29 @@ const Header = () => {
         </div >
         <div className="h-full w-[260px]">
             <nav className=" hidden md:flex h-full w-full justify-between items-center ">
-                <a href="/#About Me" className="h-full scroll-smooth motion-reduce:scroll-auto flex items-center justify-center font-[Manrope] font-light w-1/3 text-center">About </a>
-                <a href="/#Projects" className="h-full flex items-center justify-center font-[Manrope] font-light w-1/3 text-center"> Projects </a>
-                <a className="h-full flex items-center justify-center font-[Manrope] font-light w-1/3 text-center"> CV</a>
-            </nav>
+                <HashLink
+                    smooth
+                    to="/#AboutMe"
+                    className="h-full flex items-center justify-center font-[Manrope] font-light w-1/3 text-center"
+                >
+                    About
+                </HashLink>
+
+                <HashLink
+                    smooth
+                    to="/#Projects"
+                    className="h-full flex items-center justify-center font-[Manrope] font-light w-1/3 text-center"
+                >
+                    Projects
+                </HashLink>
+
+                <HashLink
+                    smooth
+                    to="/#CV"
+                    className="h-full flex items-center justify-center font-[Manrope] font-light w-1/3 text-center"
+                >
+                    CV
+                </HashLink></nav>
             <div className="md:hidden h-full w-full flex ">
                 <button
                     ref={buttonRef}
@@ -54,9 +74,29 @@ const Header = () => {
                     ref={panelRef}
                     className="md:hidden absolute right-0 top-14 w-44 rounded-xl  bg-white p-2"
                 >
-                    <a className="block px-3 py-2 rounded hover:bg-black/5 font-[Manrope] font-light">About</a>
-                    <a className="block px-3 py-2 rounded hover:bg-black/5 font-[Manrope] font-light">Projects</a>
-                    <a className="block px-3 py-2 rounded hover:bg-black/5 font-[Manrope] font-light">CV</a>
+                    <HashLink
+                        smooth
+                        to="/#AboutMe"
+                        className="block px-3 py-2 rounded hover:bg-black/5 font-[Manrope] font-light"
+                    >
+                        About
+                    </HashLink>
+
+                    <HashLink
+                        smooth
+                        to="/#Projects"
+                        className="block px-3 py-2 rounded hover:bg-black/5 font-[Manrope] font-light"
+                    >
+                        Projects
+                    </HashLink>
+
+                    <HashLink
+                        smooth
+                        to="/#CV"
+                        className="block px-3 py-2 rounded hover:bg-black/5 font-[Manrope] font-light"
+                    >
+                        CV
+                    </HashLink>
                 </div>
             )}
 

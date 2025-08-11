@@ -1,5 +1,7 @@
+
+
 const Aboutdetail = () => (
-    <section id="About Me" className="scroll-mt-[12vh] border-b-1 border-b-gray-100 w-full px-5 my-20 pb-10">
+    <section id="AboutMe" className="scroll-mt-[12vh] border-b-1 border-b-gray-100 w-full px-5 my-20 pb-10">
         <div className="mx-15 ">
             <h2 className="font-[Manrope] text-[18px] leading-[22px] mb-12 ">About Me</h2>
 

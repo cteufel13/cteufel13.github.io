@@ -4,20 +4,21 @@ import { Grid, List } from "lucide-react"; // icons
 import Bernoulli from './assets/Bernoulli.png';
 import RP4B from './assets/RP4B.png';
 import SPD from './assets/SPD.png';
-import Chains from './assets/Chains.png';
+import RiskNeutralHedging from './assets/RiskNeutralHedging.png';
 import ACEDB from './assets/acedb.png'
 
 import Python from './assets/Python.svg';
 import Cpp from './assets/CPlusPlus.svg';
 import Cmake from './assets/CMake.svg';
 
+import { Link } from "react-router-dom";
 
 
 const imageMap = {
     Bernoulli,
     RP4B,
     SPD,
-    Chains,
+    RiskNeutralHedging,
     ACEDB,
 };
 
@@ -58,11 +59,14 @@ const Project = ({ title, description, link, tags, view }) => {
 
     return (
         <div >
-            {view === "grid" ? (<a className='group'>
+            {view === "grid" ? (<Link to={link} className="group">
                 <div className="w-full aspect-[1/1.25]">
-                    <img src={imageMap[link]} className=" w-full h-90/100 filter object-cover grayscale contrast-125 brightness-90 group-hover:grayscale-0 group-hover:contrast-100 group-hover:brightness-100 transition-all duration-500 ease-in-out" />
-                    <div className='w-full h=10/100'>
-                        <p className="font-[Manrope] text-[14px] text-[#2b2b2b] mt-3"> {title}</p>
+                    <img
+                        src={imageMap[link]}
+                        className="w-full h-90/100 filter object-cover grayscale contrast-125 brightness-90 group-hover:grayscale-0 group-hover:contrast-100 group-hover:brightness-100 transition-all duration-500 ease-in-out"
+                    />
+                    <div className="w-full h-10/100">
+                        <p className="font-[Manrope] text-[14px] text-[#2b2b2b] mt-3">{title}</p>
                         <div className="flex flex-wrap gap-1 font-[Manrope] text-[14px] leading-[18px] font-normal items-center filter grayscale text-[#9c9c9c] hover:grayscale-0 hover:text-black">
                             ↳ {tags.map((tag, i) => (
                                 <span key={i} className="flex items-center gap-1">
@@ -73,25 +77,22 @@ const Project = ({ title, description, link, tags, view }) => {
                         </div>
                     </div>
                 </div>
-            </a>)
+            </Link>)
                 : (
-                    <a href={link} className="group block">
-                        <div className="grid  gap-6 py-6  pb-12 " > {/* grid-cols-[88px_1fr]*/}
-
-
-
+                    <Link to={link} className="group block">
+                        <div className="grid gap-6 py-6 pb-12">
                             <div className="flex min-h-[80px]">
-                                <div className='flex flex-col w-3/10'>
-                                    <h3 className=" font-[Manrope] text-2xl leading-tight group-hover:text-black">
+                                <div className="flex flex-col w-3/10">
+                                    <h3 className="font-[Manrope] text-2xl leading-tight group-hover:text-black">
                                         {title}
                                     </h3>
-
                                 </div>
 
-                                <p className=" font-[Manrope] flex-1 font-normal text-[rgb(51,51,51)] text-[16px] leading-[24px]">
+                                <p className="font-[Manrope] flex-1 font-normal text-[rgb(51,51,51)] text-[16px] leading-[24px]">
                                     {description}
                                 </p>
-                                <div className=' w-2/10  flex justify-center'>
+
+                                <div className="w-2/10 flex justify-center">
                                     <div className="w-20 h-20 rounded-full overflow-hidden shrink-0">
                                         <img
                                             src={imageMap[link]}
@@ -100,11 +101,9 @@ const Project = ({ title, description, link, tags, view }) => {
                                         />
                                     </div>
                                 </div>
-
-
                             </div>
                         </div>
-                    </a>
+                    </Link>
 
                 )}
         </div>
@@ -150,7 +149,7 @@ const Projects = () => {
             <Project title="RP4B" link="RP4B" description="A C++ options trading platform designed for paper trading and strategy development. This modular system provides real-time data processing, options chain analysis, and automated trading capabilities through the Alpaca API."
                 tags={["c++", "cmake"]} view={view}></Project>
             <Project title="Financial Regime Clustering" description="Regime‑Based Portfolio Classification - an ML approach" link="SPD" tags={["python"]} view={view}></Project>
-            <Project title="Risk Neutral (Delta+) Hedging" description="A personal deep dive into the world of risk neutral hedging using options (delta/gamma/vega hedging)" link="Chains" tags={["python"]} view={view}></Project>
+            <Project title="Risk Neutral (Delta+) Hedging" description="A personal deep dive into the world of risk neutral hedging using options (delta/gamma/vega hedging)" link="RiskNeutralHedging" tags={["python"]} view={view}></Project>
             <Project title="ACEDB" description="A lightweight CLI + Python wrapper to easily manage PostgreSQL database connections for Analytics Club ETH." link="ACEDB" tags={["python"]} view={view}></Project>
         </div>
 

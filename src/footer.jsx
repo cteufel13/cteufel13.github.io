@@ -1,6 +1,7 @@
 import Linkedin from './assets/logo/Linkedin.png';
 import Github from './assets/logo/Github.png';
 import Spotify from './assets/logo/Spotify.png';
+import { HashLink } from "react-router-hash-link";
 
 const Footer = () => {
     return (
@@ -12,9 +13,9 @@ const Footer = () => {
                     <h2 className='font-[Manrope] font-light text-1xl text-center  '> Robotics and Data Science</h2>
                 </div>
                 <div className='flex flex-row gap-5 font-[Manrope]'>
-                    <a href="#About Me"> About</a>
-                    <a href="#Projects"> Projects</a>
-                    <a href="mailto:cteufel@ethz.ch"> Contact </a>
+                    <HashLink smooth to="/#AboutMe">About</HashLink>
+                    <HashLink smooth to="/#Projects">Projects</HashLink>
+                    <a href="mailto:cteufel@ethz.ch">Contact</a>
                 </div>
 
                 <div className='flex flex-row h=1/2  gap-14'>
