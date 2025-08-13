@@ -5,7 +5,7 @@ import Bernoulli from './assets/Bernoulli.png';
 import RP4B from './assets/RP4B.png';
 import SPD from './assets/SPD.png';
 import RiskNeutralHedging from './assets/RiskNeutralHedging.png';
-import ACEDB from './assets/acedb.png'
+import AceDB from './assets/acedb.png'
 
 import Python from './assets/Python.svg';
 import Cpp from './assets/CPlusPlus.svg';
@@ -19,7 +19,7 @@ const imageMap = {
     RP4B,
     SPD,
     RiskNeutralHedging,
-    ACEDB,
+    AceDB,
 };
 
 const tagIcons = {
@@ -150,7 +150,7 @@ const Projects = () => {
                 tags={["c++", "cmake"]} view={view}></Project>
             <Project title="Financial Regime Clustering" description="Regime‑Based Portfolio Classification - an ML approach" link="SPD" tags={["python"]} view={view}></Project>
             <Project title="Risk Neutral (Delta+) Hedging" description="A personal deep dive into the world of risk neutral hedging using options (delta/gamma/vega hedging)" link="RiskNeutralHedging" tags={["python"]} view={view}></Project>
-            <Project title="ACEDB" description="A lightweight CLI + Python wrapper to easily manage PostgreSQL database connections for Analytics Club ETH." link="ACEDB" tags={["python"]} view={view}></Project>
+            <Project title="ACEDB" description="A lightweight CLI + Python wrapper to easily manage PostgreSQL database connections for Analytics Club ETH." link="AceDB" tags={["python"]} view={view}></Project>
         </div>
 
     </div >
